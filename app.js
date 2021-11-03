@@ -27,7 +27,7 @@ liveReloadServer.server.once("connection", () => {
 app.use(helmet())
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://ahmeddahees:2468@cluster0.20l5d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority").then((resulet) => {
+mongoose.connect("mongodb+srv://YOU USER NAME:YOUR PASSWORD@cluster0.20l5d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority").then((resulet) => {
     app.listen(process.env.port || port, () => {
         console.log(`Example app listening at http://localhost:${port}`)
     })
