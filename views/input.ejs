@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="java script.js"></script>
+    <link rel="stylesheet" href="css.css" />
+
+    <link rel="stylesheet" href="inputcss.css" />
+</head>
+
+<body class="body">
+    <%- include("./things/head") %>
+        <!-- <img class="img" src="ggg.png"> -->
+        <div id="picc1"> <video class="video" width="750px" height="750px" loop autoplay src="Comp 1 1-1.m4v"></video></div>
+        <form action="/index" method="POST">
+            <input name="title" placeholder="title" id="text" type="text" required/>
+
+            <input name="photo" placeholder="file" id="file" type="text" required/>
+
+            <textarea name="data" placeholder="discrition" id="textarea" required></textarea>
+            <button id="click">click to add</button>
+        </form>
+
+
+        <%- include("./things/fotter") %>
+</body>
+
+</html>

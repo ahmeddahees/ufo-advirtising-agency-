@@ -1,0 +1,488 @@
+ body {
+     padding: 0px !important;
+     margin: 0px !important;
+     color: white;
+     width: auto;
+     overflow: visible;
+     background-color: #080f16;
+     box-sizing: border-box;
+ }
+ 
+ .top {
+     display: flex;
+     box-shadow: 1px 1px 25px 0px rgb(0, 0, 0);
+     width: 100%;
+     padding: 10px;
+     background-color: white;
+     height: 100%;
+     padding-bottom: 15px;
+     justify-content: right;
+ }
+ 
+ .top2 {
+     position: absolute;
+     background-color: #fff;
+     top: 0px;
+     height: 60px;
+     display: none;
+     z-index: 1;
+     width: 100%;
+     right: 0px;
+     left: 0px;
+ }
+ /* h3 {
+     font-size: 1.5rem;
+     color: black;
+     font-weight: 700;
+     font-family: serif;
+     background-color: rgba(255, 255, 255, 0.50);
+     position: relative;
+     right: 100%;
+     top: 20%;
+     text-align: center;
+ } */
+ 
+ .imguplouded {
+     width: 300px;
+     transition: 0.3s linear;
+     height: 300px;
+     z-index: -1;
+     position: relative;
+     /* border-radius: 15px; */
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ .imgdetail {
+     width: auto;
+     border-radius: 25px;
+ }
+ 
+ .whatwillinside {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     height: 500px;
+     border-radius: 25px;
+     width: auto;
+ }
+ 
+ .title {
+     display: flex;
+     justify-content: center;
+     color: white;
+     font-size: 5em;
+     padding: 15px;
+     font-weight: 700;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
+ .h11 {
+     font-size: 3rem;
+     /* top: -120%;
+    right: 30%; */
+     width: 250px;
+     padding-bottom: 5px;
+     display: flex !important;
+     /* visibility: hidden; */
+     /* visibility: unset; */
+     /* top: -300px; */
+     position: relative;
+     /* top: 110vh; */
+     justify-content: center;
+     right: 100%;
+     z-index: 1;
+     color: white;
+ }
+ 
+ .arrow {
+     position: fixed;
+     right: 15px;
+     opacity: 0;
+     cursor: pointer;
+     background-color: white;
+     border-radius: 40px;
+     top: 85%;
+     z-index: 99999999999;
+ }
+ 
+ .h1 {
+     color: white;
+     position: absolute;
+     right: 20%;
+     font-family: 'Bebas Neue', cursive;
+     opacity: 0;
+     transition: 0.2s linear;
+     top: 45%;
+     z-index: 5151;
+     font-size: 50px;
+ }
+ /* .all {
+     width: 95%;
+     height: auto;
+     display: flex;
+ } */
+ 
+ @keyframes cool {
+     from {
+         opacity: 0;
+     }
+     to {
+         opacity: 1;
+     }
+ }
+ 
+ .square:hover .imguplouded {
+     opacity: 0.50;
+     /* transform: rotate(5deg); */
+     width: 350px;
+     height: 350px;
+ }
+ 
+ .square:hover .h1 {
+     opacity: 1;
+ }
+ 
+ .square {
+     width: 300px;
+     height: 300px;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     text-align: right;
+     background-color: rgba(0, 0, 0, 0.25);
+     position: relative;
+     margin-right: 10px;
+     z-index: 99999;
+     margin-bottom: 15px;
+     /* border-radius: 15px; */
+ }
+ 
+ #picc1 {
+     width: 750px;
+     height: 750px;
+     z-index: -1;
+     margin-top: -5vh;
+     display: flex;
+     left: 30vh;
+     justify-content: center;
+     position: relative;
+     overflow: visible;
+ }
+ 
+ .top2 .top1 {
+     width: 180px;
+     right: 0px;
+     text-align: center;
+     z-index: -22;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     transform: translateY(-150px);
+     transition: 0.3s linear;
+     position: absolute;
+     background-color: rgb(255, 255, 255);
+     height: auto;
+ }
+ 
+ .top6 {
+     transform: translateY(70px) !important;
+     z-index: -22;
+ }
+ 
+ .panelicon {
+     width: 50px;
+     float: right;
+     cursor: pointer;
+     padding-top: 15px;
+     padding-right: 15px;
+ }
+ 
+ .logo {
+     width: 14%;
+     min-width: 150px;
+     padding-left: 40px;
+     left: 0%;
+     position: absolute;
+ }
+ 
+ .logo1 {
+     width: 13%;
+     float: left;
+     min-width: 150px;
+     min-height: 55px;
+     padding-left: 40px;
+     margin-top: 0.3vh;
+     left: 0%;
+     position: absolute;
+ }
+ 
+ .links:hover {
+     color: rgb(37, 61, 141);
+ }
+ 
+ .links {
+     text-decoration: none;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 1.7em;
+     float: right;
+     display: block;
+     text-align: center;
+     justify-content: center;
+     color: #082032;
+     padding-right: 5%;
+     padding-top: 1%;
+ }
+ 
+ .links1 {
+     text-decoration: none;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 1.7em;
+     float: right;
+     justify-content: right;
+     color: #080f16;
+ }
+ 
+ .img {
+     align-content: center;
+     margin-top: 8%;
+     margin-left: 5%;
+     animation: imgMove 4s infinite;
+ }
+ 
+ @keyframes imgMove {
+     0% {
+         transform: rotate(3deg);
+     }
+     50% {
+         transform: rotate(-3deg);
+     }
+     100% {
+         transform: rotate(3deg);
+     }
+ }
+ 
+ .klam {
+     text-align: left;
+     width: 90%;
+     margin-top: -6vh;
+     justify-content: center;
+     margin-left: 7%;
+     display: flex;
+     font-size: 1.6em;
+ }
+ 
+ .alllinks {
+     margin-bottom: 10px;
+     margin-left: 5%;
+ }
+ 
+ .klamfotter {
+     font-size: 1.2em;
+     color: white;
+     margin-top: 15px;
+     padding: 10px;
+     display: flex;
+     justify-content: center;
+     font-family: serif;
+ }
+ 
+ .alllinks1 {
+     text-decoration: none;
+     font-size: 1.2em;
+     color: red;
+     margin-left: 2%;
+ }
+ 
+ .all {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     z-index: 999999999;
+     opacity: 0;
+     transition: 0.5s ease-in-out;
+ }
+ 
+ @keyframes moveimage {
+     0% {
+         transform: translateX(500px);
+     }
+     50% {
+         transform: translateX(-500px)
+     }
+     100% {
+         transform: translateX(0px)
+     }
+ }
+ 
+ @keyframes hideimage {
+     0% {
+         transform: translateX(0px);
+     }
+     50% {
+         transform: translateX(-1000px)
+     }
+     100% {
+         transform: translateX(0px);
+     }
+ }
+ 
+ .pic:hover {
+     width: 330px;
+     opacity: 75%;
+     height: 330px;
+ }
+ 
+ .pic {
+     display: flex;
+     width: 300px;
+     transition: 0.2s ease-in-out;
+     height: 300px;
+     align-content: flex-start;
+     /* z-index: 2; */
+     margin: 1px;
+     justify-content: center;
+ }
+ 
+ .hideimage {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     animation: hideimage 0.5s ease-in-out;
+ }
+ 
+ .allh {
+     display: none;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+ 
+ #picc {
+     width: 300px;
+     height: 300px;
+     overflow: hidden;
+ }
+ 
+ #top1 {
+     display: none;
+ }
+ /* clint scroll */
+ /* .clint {
+    position: relative;
+    width: 10000px;
+    overflow: hidden;
+    margin-top: 50px;
+    background-image: url(bgg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
+}
+
+.clintepic {
+    display: inline-flex;
+    width: 200px;
+    top: 5vh;
+    border-radius: 25px;
+    position: relative;
+    margin-left: 45px;
+    animation: clint 30s infinite;
+    height: 200px;
+} */
+ 
+ @keyframes clint {
+     0% {
+         right: 0px;
+     }
+     50% {
+         right: 2000px;
+     }
+     100% {
+         right: 0px;
+     }
+ }
+ 
+ @media only screen and (max-width:700px) {
+     .top2 {
+         display: block;
+     }
+     @keyframes movepanel1 {
+         from {
+             top: 70px;
+         }
+         to {
+             top: -100px;
+         }
+     }
+     @keyframes movepanel {
+         from {
+             top: -60px;
+             display: none;
+         }
+         to {
+             top: 70px;
+         }
+     }
+     .video {
+         position: absolute;
+         width: 550px;
+         height: 550px;
+         justify-content: center;
+         left: 0vh;
+     }
+     #picc1 {
+         width: 470px;
+         height: 530px;
+         display: flexbox;
+         justify-content: center;
+         position: relative;
+         left: 0vh;
+         overflow: hidden;
+     }
+     .top3 {
+         display: grid !important;
+         width: 180px;
+         right: 0px;
+         text-align: center;
+         animation: movepanel 0.5s ease-in-out;
+         top: 70px;
+         position: absolute;
+         background-color: white;
+         height: auto;
+     }
+     .img1 {
+         width: 600px;
+         float: right;
+         height: 600px;
+         overflow: hidden;
+     }
+     #picc {
+         width: 260px;
+         height: 260px;
+     }
+     .pic {
+         width: 300px;
+         height: 300px;
+     }
+     .pic1 {
+         left: 0px;
+         float: left;
+         width: 720px;
+         height: 720px;
+     }
+     .square {
+         width: 250px;
+         height: 250px;
+     }
+     .img {
+         width: 800px;
+         display: flex;
+         justify-content: center;
+         margin-top: 100px;
+         float: right;
+         left: 150px;
+         position: relative;
+     }
+ }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% mythings.forEach(item => { %>
+
+        <title>
+            <%= item.title  %>
+        </title>
+        <%  }); %>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <script defer src="java script.js"></script>
+            <link rel="stylesheet" href="css.css" />
+</head>
+
+<body class="body">
+    <div id="asdasdasdasd"></div>
+    <!--for screen smaller than 700px-->
+    <div class="top2">
+        <img class="logo1" src="1.png">
+        <img class="panelicon" src="panelIcon.png">
+        <div class="top1">
+            <a class="links1" href="#down">PORTFOLIO
+        </a>
+            <a class="links1" href="/input">add new thing
+        </a>
+            <a class="links1" href="/contact">CONTACT’S
+
+        </a>
+        </div>
+
+    </div>
+    <!--for screen more than 700px-->
+
+    <div class="top">
+        <a href="/"> <img class="logo" src="1.png"></a>
+        <a class="links" href="#down">PORTFOLIO
+        </a>
+        <a class="links" href="/input">add new thing
+        </a>
+        <a class="links" href="/contact">CONTACT’S
+
+        </a>
+    </div>
+    <!-- <img class="img" src="ggg.png"> -->
+    <div id="picc1"> <video class="video" width="750px" height="750px" loop autoplay src="Comp 1 1-1.m4v"></video></div>
+    <p class="klam">Birdmilk’s success story started in 2002 and in a short period of time succeeded in becoming one of the top creative agencies in the Middle East and GCC with a strong background in advertising and experts who lead. We’re specialized in creating strategic
+        plans and executing it effectively as we handle everything from scratch, starting from branding to implementing creative campaigns and digital marketing that enhance the promoting of your brand.
+    </p>
+    <a href="#asdasdasdasd"> <span class="arrow"><img style="width: 70px; padding: 10px; height: 70px;" src="arrow.png" alt=""></span></a>
+    <div id="down" class="all">
+        <% mythings.forEach(item => { %>
+            <div class="square">
+
+                <a href="/index/<%=item._id%>">
+
+                    <img style="z-index: 1;" src="/<%=item.photo%>" alt="UFO Advirtesing" class='imguplouded'>
+                    <h1 class="h1">
+                        View More
+                    </h1>
+                    <h3>
+                        <%=item.data%>
+
+                    </h3>
+                    </img>
+
+
+
+
+                </div>
+            </a>
+
+                <%  }); %>
+            </div>
+            <%- include("./things/fotter") %>
+
+</body>
+
+</html>
